@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturatedcyangraphic-design-text: hsl(167, 40%, 24%);
+    --Dark-blue-photography-text: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan-footer: hsl(168, 39%, 60%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --f-size:18px;
+    --f-family-barlow:'Barlow', sans-serif;
+    --f-family-frances:'Fraunces', serif;
+
+
+}
+
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.anchortags{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.anchortags li{
+    margin: 1rem 0.5rem;
+}
+.anchortags li a{
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1rem;
+    font-family: var(--f-family-barlow);
+    font-weight: 200;
+    padding: 0.5rem;
+}
+#contact-Button{
+    background-color: var(--White);
+    color: var(--Very-dark-desaturated-blue) !important;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--f-family-barlow);
+    font-weight: 200;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+#contact-Button:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+#contact-Button a{
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.logoCotainer{
+    text-align: center;
+    font-weight: 900;
+    font-family: var(--f-family-frances);
+    font-size: 1.6rem;
+    color: var(--White);
+}
+.mainHeadereContainer{
+    background-image: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:90vh;
+}
+.primary-Heading{
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--f-family-frances);
+    font-weight: 700;
+    color: var(--White);
+    text-transform: uppercase;
+}
+#ArrowIcon{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* ===================================Body part ============================= */
+.mainBodyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1rem;
+
+}
+.Section{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 3rem;
+    gap: 1.5rem;
+}
+
+.rightContainer{
+    width: 50%;
+}
+.rightContainer img{
+    width: 100%;
+    height: 100%;
+}
+.secondaryheading{
+    font-size: 2rem;
+    font-family: var(--f-family-frances);
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    width: 80%;
+}
+.secondaryheading1{
+    color: var(--Dark-desaturatedcyangraphic-design-text) !important;
+}
+.secondary_para{
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: var(--Grayish-blue);
+
+}
+
+#learnMore,#learnMoreAudience{
+
+    text-decoration: none;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: var(--f-family-frances);
+    text-decoration:underline;
+}
+#graphicDesignDiv{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    padding: 3.5rem !important;
+    margin:0 !important;
+
+
+
+}
+#photographyDiv{
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+    justify-content: end;
+    padding: 3.5rem;
+    gap: 2rem;
+
+}
+.secondary_para1{
+    width: 85%;
+    color: var(--Dark-desaturatedcyangraphic-design-text) !important;
+}
+.secondary_para2{
+    width: 85%;
+    color: var(--Very-dark-desaturated-blue) !important;
+}
+.clienttestimonialSection{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.mainTestimonialMaincontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+.clientDescription{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+    margin-top: 2rem;
+}
+.testimonialDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+.primaryTestimonialHeading{
+    color: var(--Dark-grayish-blue);
+    font-family: var(--f-family-frances);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+
+.avatarcontainer img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+
+}
+.secondaryheadingTestimonial{
+    color: var(--Very-dark-desaturated-blue);
+    font-family: var(--f-family-frances);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.7rem;
+
+}
+.secondaryPara{
+    color: var(--Very-dark-grayish-blue);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: -0.3rem;
+}
+.lastSection{
+    display: flex;
+    flex-direction: row;
+    
+}
+.imageCon img{
+    width: 100%;
+    height: 100%;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color:var(--Dark-moderate-cyan-footer);
+}
+.footerAnchorTagsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+
+
+}
+.footerAnchorTagsContainer li a{
+    text-decoration: none;
+    color: var(--Dark-desaturatedcyangraphic-design-text);
+    font-family: var(--f-family-barlow);
+    font-weight: 200;
+    font-size: 1rem;
+}
+.footerAnchorTagsContainer li a:hover{
+    cursor: pointer;
+    color: var(--White);
+
+}
+.footerAnchorTagsContainer li img:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.footerLogo{
+    color: var(--Dark-desaturatedcyangraphic-design-text) !important;
+}
+@media screen and (max-width: 750px) {
+    .secondary_para1 {
+        width: 100%;
+    }
+    .secondaryheading{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .secondary_para{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+#barIcon{
+    display: none;
+}
+
+@media screen and (max-width:565px) {
+
+    .anchortags{
+        display: none;
+    }
+    #barIcon{
+        display: block;
+    }
+    #brandSection{
+        flex-direction: column-reverse;
+    }
+    
+    .Section{
+        flex-direction: column;
+        height: 100%;
+    }
+    .leftContainer,.rightContainer{
+        width: 100%;
+        text-align: center;
+    }
+    #phtot1 img:nth-child(2),#phtot2 img:nth-child(2),#phtot3 img:nth-child(2),#phtot4 img:nth-child(2){
+        display: flex !important;
+    }
+    #phtot1 img:nth-child(1),#phtot2 img:nth-child(1),#phtot3 img:nth-child(1),#phtot4 img:nth-child(1){
+        display: none;
+    }
+    #mobileImageAudience,#mobileImage{
+        display: flex !important;
+    }
+    #brandImage,#audienceImage{
+        display: none;
+    }
+    .mainHeadereContainer{
+        background-image: url("./images/mobile/image-header.jpg");
+    }
+    #graphicDesignDiv{
+        background-image: url("./images/mobile/image-graphic-design.jpg");
+    }
+    #photographyDiv{
+        background-image: url("./images/mobile/image-photography.jpg");
+    }
+    #graphicDesignDiv h2,#photographyDiv h2{
+        margin-top: 10rem;
+    }
+    .mainTestimonialMaincontainer{
+        flex-direction: column;
+    }
+    .clientDescription{
+        width: 100%;
+    }
+
+   
+    
+}
